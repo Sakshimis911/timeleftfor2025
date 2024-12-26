@@ -9,8 +9,9 @@
 <body>
   <div class="container">
     <h1>Time Left for the End of 2025</h1>
-    <label for="timezone">Enter your timezone (e.g., UTC+5):</label>
-    <input type="text" id="timezone" placeholder="e.g., UTC+5">
+    <label for="timezone">Enter your timezone (e.g., UTC+05:00):</label>
+    <input type="text" id="timezone" placeholder="e.g., UTC+05:00" autocomplete="off">
+    <ul id="timezone-list" style="display: none; position: absolute; max-height: 200px; overflow-y: auto; border: 1px solid #ccc; background: white; z-index: 1000;"></ul>
     <button id="calculateBtn">Calculate</button>
     <div id="remainingTime"></div>
   </div>
